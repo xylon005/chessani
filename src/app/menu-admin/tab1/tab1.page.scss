@@ -1,0 +1,88 @@
+.toolbar{  
+    --ion-toolbar-background: black;    
+}
+
+.Title{
+    color: white;    
+}
+
+.fondo{        
+    --ion-background-color: rgba(0, 6, 85, 0.712);    
+    padding: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 450px;
+}
+
+.fondo2{        
+    --ion-background-color: rgba(85, 0, 0, 0.712);    
+    padding: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 450px;
+}
+
+.fondo3{        
+    --ion-background-color: rgba(14, 78, 1, 0.712);    
+    padding: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 450px;
+}
+
+// .ioncontent{
+//     --background: url(../../assets/fondoApp6.jpg) 0 0/100% 100% no-repeat;
+// }
+
+.titleCard{
+    color: white;
+}
+
+.img{
+    height: 225px;
+    width: 350px;
+}
+
+.reporte{
+    display: flex; 
+    justify-content: center;
+}
+
+.divConteiner{
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    background-color: rgb(26, 0, 121);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.divConteiner2{
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    background-color: rgb(110, 1, 1);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.divConteiner3{
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    background-color: rgb(5, 110, 1);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}

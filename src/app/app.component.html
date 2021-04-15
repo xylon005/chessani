@@ -1,0 +1,48 @@
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app>
+<ion-app>
+  <ion-menu menuId="maid-menu" contentId="maid">
+    <ion-content>
+
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+        <img src="..//./assets/user2.png" alt="">
+        <ion-label>
+          <h2>Jose Angel Del Villar </h2>
+          <p>User</p>
+        </ion-label>
+      </div>
+      <div class="action-button">
+        <ion-button>
+          <ion-icon slot="start" name="add"></ion-icon>Perfil
+        </ion-button>
+      </div>
+      <ion-list lines="none">
+
+        <ion-item>
+          <ion-icon name="car-outline"></ion-icon>Mis viajes
+        </ion-item>
+        <ion-item>
+          <ion-icon name="wallet-outline"></ion-icon>Mis billetera
+        </ion-item>
+        <ion-item>
+          <ion-icon name="headset-outline"></ion-icon>Ayuda
+        </ion-item>
+        <ion-item>
+          <ion-icon name="hardware-chip-outline"></ion-icon>Centro de seguridad
+        </ion-item>
+        <ion-item class="action">
+          <ion-icon name="settings-outline"></ion-icon>Configuracion
+        </ion-item>
+        <ion-item>
+          <ion-icon name="toggle-outline"></ion-icon>
+          Cerrar secion
+        </ion-item>
+
+      </ion-list>
+     
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="maid"></ion-router-outlet>
+</ion-app>

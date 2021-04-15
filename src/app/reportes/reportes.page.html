@@ -1,0 +1,60 @@
+<ion-header class="toolbar">
+  <ion-toolbar>
+    <ion-title class="Title">Altas de reportes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ioncontent">
+
+  <ion-card style="--ion-background-color: rgba(0, 6, 85, 0.712);">
+    <form #form="ngForm" ngForm="form" (ngSubmit)="registrarReporte(form)">
+      <ion-item style="color: white; background: turquoise;">
+        <ion-label position="floating">
+          <span>Origen</span>
+        </ion-label>
+        <ion-input  type="text" required [(ngModel)]="repo.origen" name="origen"></ion-input>
+      </ion-item>
+      <ion-item style="color: white; background: turquoise;">        
+        <ion-label position="floating">
+          <span>Destino</span>
+        </ion-label>        
+        <ion-input  type="text" required [(ngModel)]="repo.destino" name="destino"></ion-input>
+      </ion-item>           
+      <ion-item style="color: white; background: turquoise;">        
+        <ion-label position="floating">
+          <span>Duración</span>
+        </ion-label>        
+        <ion-input  type="text" required [(ngModel)]="repo.duracion" name="duracion"></ion-input>
+      </ion-item>           
+      <ion-item style="color: white; background: turquoise;">        
+        <ion-label position="floating" style="margin: 10px;">
+          <span>Fecha</span>
+        </ion-label>        
+        <ion-input  type="date" required [(ngModel)]="repo.fecha" name="fecha"></ion-input>
+      </ion-item>                         
+      <div style="display: flex; justify-content: center; margin: 20px;">
+        <ion-button type="submit">Registrar</ion-button>
+        <ion-button (click)="regresar()" color="tertiary">Regresar</ion-button>
+      </div>
+    </form>
+    <div style="display: flex; justify-content: center;">
+      <strong style="padding-top: 10px; color: white;">Ver reportes:</strong>
+      <ion-toggle color="primary" #toggle></ion-toggle>
+    </div>
+ 
+    <ion-list class="white" *ngIf="toggle.checked">
+      <ion-item style="background-color: cornflowerblue; margin: 10px;" *ngFor="let r of reporte">
+        <ion-icon name="body-outline" style="color: white;" slot="start"></ion-icon>
+        <div>
+          <p style="color: white">{{ r.origen }}</p>
+          <p style="color: white">{{ r.destino }}</p>
+          <p style="color: white">{{ r.duracion }}</p>
+          <p style="color: white">{{ r.fecha }}</p>          
+        </div>
+      </ion-item>    
+    </ion-list>
+
+
+  </ion-card>
+
+</ion-content>

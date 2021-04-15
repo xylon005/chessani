@@ -1,0 +1,59 @@
+<ion-header class="toolbar">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button> 
+    </ion-buttons>
+    <ion-title>Registrate</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Registro de Usuarios</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="container ion-text-center"  color="white" fill="outline" >
+    <h2 class="text-center">Nuevos Usuario</h2>
+    <img src="..//..//../assets/user.png" width="100"  >
+    <form (ngSubmit)="altaUser(forma)" #forma="ngForm">
+  <ion-item>
+    <ion-input [(ngModel)]="usu.strNombre" name="strNombre" placeholder="Nombre" type="Nombre" class="primary-input" ></ion-input>
+    
+  </ion-item>
+  <ion-item>
+    
+    <ion-input [(ngModel)]="usu.strPassword" name="strPassword" placeholder="password" type="password"></ion-input>
+  </ion-item>
+  <ion-item>
+    
+    <ion-input [(ngModel)]="usu.strCorreo" name="strCorreo" placeholder="Email" type="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    
+    <ion-input [(ngModel)]="usu.strDireccion" name="strDireccion" placeholder="Direccion" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    
+    <ion-input [(ngModel)]="usu.nmbEdad" name="nmbEdad" placeholder="Edad" type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    
+    <ion-input [(ngModel)]="usu.arrTelefonos" name="arrTelefonos" placeholder="Telefono" type="number"></ion-input>
+  </ion-item>
+      
+    <ion-item class="text">
+      <ion-label>Tipo de usuario</ion-label>
+      <ion-select [(ngModel)]="usu.tipo" placeholder="Select" name="tipo">
+        <ion-select-option value="Usuario">Pasajero</ion-select-option>
+        <ion-select-option value="Chofer">Chofer</ion-select-option>
+        <ion-select-option value="Administrador">Administrador</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+
+  <ion-button class="mt-3" expand="block" fill="outline" type="submit" color="danger" >Registro</ion-button>
+    </form>
+  </div>
+</ion-content>

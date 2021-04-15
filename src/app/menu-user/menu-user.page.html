@@ -1,0 +1,49 @@
+<ion-buttons slot="start">
+  <ion-button start>
+         <button [hidden]="!ispickreques" (click)="cancelpick()">
+      <ion-icon name="arrow-back"></ion-icon>cancelar
+
+    </button>
+  </ion-button>
+  <ion-menu-button menu="maid-menu">
+          </ion-menu-button>
+          <ion-icon routerLink="/inicio" name="log-out-outline" style="float: right; width: 30px; height: 30px; color: rgb(15, 134, 79);"></ion-icon>      
+</ion-buttons>
+
+<ion-content>
+ 
+  <div id="map"></div>
+  <div id="indicators"></div>
+  
+  <div class="botton request-controls">
+    <ion-row>
+      <ion-col width-50>
+        <ion-button block color="light">
+          <ion-icon name="card"></ion-icon>
+          Visa **09
+        </ion-button>              
+        </ion-col>
+        <ion-col width-50> 
+          <ion-button block color="danger">
+            <ion-icon name="cash"></ion-icon>
+            Cash
+          </ion-button>
+      </ion-col>
+    </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button [hidden]="ispickreques" (click)="confirmpick()" expand="block" primary color="dark">Solicitar Taxi</ion-button>
+      <ion-button [hidden]="!ispickreques" (click)="cancelpick()" expand="block" color="medium">Cancelar</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col >
+      <ion-button expand="block" primary color="primary">
+      TIEMPO APROXIMADO</ion-button>
+    </ion-col>
+  </ion-row>
+  </div>
+   </ion-content>
+
+
+    

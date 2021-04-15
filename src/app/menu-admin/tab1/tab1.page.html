@@ -1,0 +1,111 @@
+<ion-header class="toolbar">
+  <ion-toolbar>
+    <ion-title>
+      <strong class="Title">
+        Administrador
+      </strong>
+      <ion-icon (click)="cerrarSesion()" name="log-out-outline" style="float: right; width: 30px; height: 30px; color: goldenrod;"></ion-icon>      
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ioncontent">  
+  
+  
+  <div class="divConteiner">
+    <strong>
+      <h2>Registro de reportes</h2>
+    </strong>
+  </div>
+
+  <ion-slides pager="true" [options]="">
+    <ion-slide>
+      <ion-card class="fondo">
+        <img class="img" src="../../assets/reportes.jpg" alt="">
+        <ion-card-header>   
+          <ion-card-title class="titleCard">Reportes generales</ion-card-title>
+        </ion-card-header>      
+        <ion-card-content class="titleCard">
+          En este apartado realizaras los reportes generales.
+          <div class="reporte">
+            <strong style="margin-right: 5px;">Reportes:</strong><ion-badge slot="end">22</ion-badge>          
+          </div>
+          <ion-button style="width: 100%;" color="tertiary" (click)="reportes()">Navegar</ion-button>
+        </ion-card-content>
+      </ion-card>  
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="fondo">
+        <img class="img" src="../../assets/choque.png" style="background-size: cover;" alt="">
+        <ion-card-header>   
+          <ion-card-title class="titleCard">Acerca del apartado reportes</ion-card-title>
+        </ion-card-header>      
+        <ion-card-content class="titleCard">
+          Descripción detallada sobre los reportes.
+          <ion-button style="width: 100%;" color="tertiary" (click)="detalleReporte()">Mostrar</ion-button>
+        </ion-card-content>
+      </ion-card>  
+    </ion-slide>
+    
+    
+    
+  </ion-slides>
+
+  <div class="divConteiner3">
+    <strong>
+      <h2>Método de pago</h2>
+    </strong>
+  </div> 
+
+  <ion-slides pager="true" [options]="">
+  
+    <ion-slide>
+      <ion-card class="fondo3">
+        <img src="../../assets/pagos.jpg" alt="" height="100px">        
+        <ion-card-header>   
+          <ion-card-title class="titleCard">Pagos</ion-card-title>
+        </ion-card-header>      
+        <ion-card-content class="titleCard">
+          En este apartado realizaras los pagos
+          <div class="reporte">
+            <strong style="margin-right: 5px;">Pagos:</strong><ion-badge slot="end">10</ion-badge>          
+          </div>          
+          <ion-button style="width: 100%;" color="tertiary" (click)="pagos()">Navegar</ion-button>
+        </ion-card-content>
+      </ion-card>  
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="fondo3">
+        <img class="img" src="../../assets/Empresarios.jpg" style="background-size: cover;" alt="">
+        <ion-card-header>   
+          <ion-card-title class="titleCard">Acerca del apartado de pagos</ion-card-title>
+        </ion-card-header>      
+        <ion-card-content class="titleCard">
+          Descripción detallada sobre los pagos.
+          <ion-button style="width: 100%;" color="tertiary" (click)="detallePago()">Mostrar</ion-button>
+        </ion-card-content>
+      </ion-card>  
+    </ion-slide>
+    <!-- <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button (click)="Tab1()">              
+          <ion-label><ion-icon name="earth-outline" style="width: 30px; height: 30px;"></ion-icon></ion-label>                      
+        </ion-tab-button>
+    
+        <ion-tab-button (click)="Tab2()">              
+          <ion-label><ion-icon name="car-sport-outline" style="width: 30px; height: 30px;"></ion-icon></ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button (click)="Tab3()">    
+          <ion-label><ion-icon name="book-outline" style="width: 30px; height: 30px;"></ion-icon></ion-label>
+        </ion-tab-button>
+        
+      </ion-tab-bar>
+    </ion-tabs>  -->
+  </ion-slides>
+  
+</ion-content>
+
+   
